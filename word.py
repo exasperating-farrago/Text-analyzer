@@ -34,7 +34,6 @@ while "" in word_list_final:
 for i in range(len(word_list_final)):
     word_list_final[i] = word_list_final[i].lower()
 
-#iske neeche most popular ka code hai
 temp_list = sorted(word_list_final,key=word_list_final.count,reverse=True)
 
 freq = {} 
@@ -52,7 +51,7 @@ with open(r"most_popular.txt",'w') as file:
     for key,value in freq.items():
         file.writelines("%s : %d\n"%(key,value))
 
-#Alphabetical wala code
+
 
 temp_list2 = sorted(word_list_final)
 
